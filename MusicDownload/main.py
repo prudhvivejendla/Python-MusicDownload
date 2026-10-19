@@ -1,17 +1,17 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import os
+import sys
 import DownloadFile
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
+
+def main():
+    print("=" * 60)
+    print(" TeluguWap Highest Quality Music Downloader ")
+    print("=" * 60)
+    
+    # Run batch download into the Music directory
+    download_dir = DownloadFile.DEFAULT_DOWNLOAD_PATH
+    DownloadFile.download_file(output_dir=download_dir)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    DownloadFile.download_file()
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
