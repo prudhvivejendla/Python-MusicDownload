@@ -6,6 +6,9 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
+MAX_INDEX_WORKERS = 3
+MAX_ALBUM_WORKERS = 4
+MAX_SONG_WORKERS = 4
 from urllib3.util import Retry
 
 # Mobile user agent required by teluguwap.net mobile version
